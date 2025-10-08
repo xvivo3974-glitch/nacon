@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>甘城猫猫&猫羽雫</title>
+  <style>
+html {
+  height: 100%;
+  overflow-x: hidden;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: url("bg.png") center/cover no-repeat fixed;
+}
+    /* ========= 以下与原样式一致，仅微调透明度让字看清 ========= */
+    :root {
+      --theme: #0066ff;
+      --glass: rgba(255, 255, 255, 0.78);   /* 毛玻璃底色 */
+      --text: #222;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    /* 统一毛玻璃卡片效果 */
+    header, .hero, .card {
+      background: var(--glass);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.2rem 2rem;
+      color: var(--text);
+    }
+    header h1 {
+      font-size: 1.5rem;
+    }
+    nav a {
+      color: var(--text);
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .hero {
+      text-align: center;
+      padding: 6rem 1rem 4rem;
+    }
+    .hero h2 {
+      font-size: 2.2rem;
+      margin-bottom: 0.8rem;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      color: #444;
+    }
+    .btn {
+      background: var(--theme);
+      color: #fff;
+      padding: 0.75rem 1.8rem;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .section {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+    .gallery {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .card {
+      width: 260px;
+      padding: 1.2rem;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 4px;
+      margin-bottom: 0.8rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #fff;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    }
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav a {
+        margin: 0.5rem 0.5rem 0 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>喵喵~谁女鹅呀？</h1>
+    <nav>
+<ul>
+        <li><a href="xinsq.html">介绍</a></li>
+        <li><a href="about.html">关于我们</a></li>
+        <li><a href="fiytgd.html">猫窝 喵~</a></li>
+    </ul>
+    </nav>
+</audio>
+<h1>《彼女は旅に出る·Nachoneko 》↓喵~</h1>
+<audio controls loop>
+  <source src="music/Nachoneko.mp3" type="audio/mpeg">
+  <source src="music/Nachoneko.ogg" type="audio/ogg">
+  您的浏览器不支持音频播放。
+
+  </header>
+
+  <section class="hero">
+    <h2>甘城なつき.</h2>
+    <p>是一名日本的插画家，同时以个人势VTuber.</p>
+    <a href="#works" class="btn">可爱的猫猫</a>
+  </section>
+
+<!-- 视频 -->
+<video controls width="100%">
+  <source src="3.mp4"  type="video/mp4">
+  <source src="3.webm" type="video/webm">
+  <source src="3.ogv"  type="video/ogg">
+  您的浏览器不支持 HTML5 视频。
+</video>
+
+  <section id="works" class="section">
+    <h3 style="text-align:center; margin-bottom:1.5rem;">可爱的猫猫</h3>
+    
+    <div class="gallery">
+      <div class="card">
+        <img src="images/na.png" alt="描1"/>
+        <h4>甘城なつき</h4>
+        
+      </div>
+      <div class="card">
+        <img src="images/shizuku.png" alt="猫猫2"/>
+        <h4>雫酱 (◍＞◡＜◍)</h4>
+        
+      </div>
+      <div class="card">
+        <img src="images/gura.png"alt="甘城"/>
+        <h4>guar</h4>
+        </div>
+      <div class="card">
+        <img src="images/nash.png"alt="甘城"/>
+        <h4>甘城&雫酱</h4>
+
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 视频均来自油管喵~
+  </footer>
+</body>
+</html>
